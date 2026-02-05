@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Viewer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="gallery.css">
+</head>
+
+
+<body>
+
+<h1>EasterIsland</h1>
+
+<div class="gallery">
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="0">
+        <img src="images/EasterIsland/20251217_104508_copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="1">
+        <img src="images/EasterIsland/20251218_100646 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="2">
+        <img src="images/EasterIsland/20251218_100840 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="3">
+        <img src="images/EasterIsland/P1050512 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="4">
+        <img src="images/EasterIsland/P1050529 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="5">
+        <img src="images/EasterIsland/P1050531 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="6">
+        <img src="images/EasterIsland/P1050537 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="7">
+        <img src="images/EasterIsland/P1050540 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="8">
+        <img src="images/EasterIsland/P1050552 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="9">
+        <img src="images/EasterIsland/P1050588 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="10">
+        <img src="images/EasterIsland/P1050598 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="11">
+        <img src="images/EasterIsland/P1050608 copy.jpg"
+             class="thumb"
+             alt="Alternative text">
+    </a>
+    <figcaption>---</figcaption>
+</figure>
+
+</div>
+
+<script>
+/*
+IMPORTANT:
+- Thumbnail paths are relative to THIS file
+- Full image paths are relative to viewer/index.html
+*/
+
+const galleryItems = [
+    {
+        src: "../images/EasterIsland/20251217_104508_copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/20251218_100646 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/20251218_100840 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050512 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050529 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050531 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050537 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050540 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050552 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050588 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050598 copy.jpg",
+        caption: "--"
+    },
+
+    {
+        src: "../images/EasterIsland/P1050608 copy.jpg",
+        caption: "--"
+    },
+
+];
+
+document.querySelectorAll(".viewer-link").forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+
+        const index = Number(link.dataset.index);
+
+        const payload = encodeURIComponent(JSON.stringify({
+            index,
+            items: galleryItems
+        }));
+
+        window.open(link.href + "#" + payload, "_blank");
+    });
+});
+</script>
+
+</body>
+</html>
+
