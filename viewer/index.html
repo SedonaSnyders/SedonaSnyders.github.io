@@ -7,55 +7,7 @@
 
 <link rel="stylesheet" href="viewer.css">
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
 
-header {
-    padding: 0.75rem;
-    background: #222;
-    color: white;
-    text-align: center;
-    line-height: 1.4;
-}
-
-main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-y: auto;   /* enables scroll when zoomed */
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    cursor: zoom-in;
-}
-
-/* Expanded (zoomed) mode */
-img.expanded {
-    max-width: 90vw;
-    max-height: none;
-    cursor: zoom-out;
-}
-
-footer {
-    padding: 0.75rem;
-    text-align: center;
-}
-
-button {
-    padding: 0.4rem 0.8rem;
-    font-size: 1rem;
-}
-</style>
 </head>
 
 <body>
@@ -63,7 +15,10 @@ button {
 <header id="caption"></header>
 
 <main>
-    <img id="image" src="" alt="">
+    <div id="viewer-content">
+        <div id="description"></div>
+        <img id="image" src="" alt="">
+    </div>
 </main>
 
 <footer>
@@ -78,29 +33,43 @@ const data = JSON.parse(
     decodeURIComponent(window.location.hash.substring(1))
 );
 
+function getScrollContainer() {
+    if (main.scrollHeight > main.clientHeight) return main;
+
+    const vc = document.getElementById("viewer-content");
+    if (vc && vc.scrollHeight > vc.clientHeight) return vc;
+
+    return document.scrollingElement;
+}
+
 let index = data.index;
 const items = data.items;
 
 const img = document.getElementById("image");
 const cap = document.getElementById("caption");
+const desc = document.getElementById("description");
 const main = document.querySelector("main");   // NEW
 
 function render() {
-    img.classList.remove("expanded");           // reset zoom
-    main.classList.remove("expanded");          // NEW
+    img.classList.remove("expanded");
+
     img.src = items[index].src;
     img.alt = items[index].caption;
-    cap.textContent = items[index].caption;
+
+    cap.textContent  = items[index].caption;
+    desc.textContent = items[index].description;
 }
 
 img.addEventListener("click", () => {
+    const expanding = !img.classList.contains("expanded");
     img.classList.toggle("expanded");
-    main.classList.toggle("expanded");           // NEW
 
-    if (img.classList.contains("expanded")) {
-        main.scrollTop = 0;                      // NEW
+    if (expanding) {
+        const scroller = getScrollContainer();
+        scroller.scrollTop = img.offsetTop;
     }
 });
+
 
 document.getElementById("next").onclick = () => {
     index = (index + 1) % items.length;

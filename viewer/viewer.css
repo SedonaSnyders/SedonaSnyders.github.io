@@ -1,54 +1,65 @@
 /* viewer.css */
 
 html, body {
-    margin: 0;
     height: 100%;
+    margin: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    overflow: hidden;          /* body NEVER scrolls */
+}
+
+header, footer {
+    flex: 0 0 auto;
 }
 
 header {
-    padding: 0.75rem;
-    background: #222;
+    background-color: black;
     color: white;
-    text-align: center;
-    line-height: 1.4;
-}
-
-main {
-    flex: 1;
+    font-size: 1.5rem;
     display: flex;
-    align-items: center;        /* center image initially */
     justify-content: center;
-    overflow-y: auto;           /* enable scroll when needed */
-}
-
-/* When zoomed, align image to top so scrolling reaches it */
-main.expanded {
-    align-items: flex-start;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    cursor: zoom-in;
-}
-
-/* Expanded (zoomed) mode */
-img.expanded {
-    max-width: 90vw;
-    max-height: none;
-    cursor: zoom-out;
+    align-items: center;
 }
 
 footer {
-    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 1 1 auto;
+    overflow-y: auto;          /* ← THE ONLY SCROLLER */
+    padding: 1rem 0;
+}
+
+/* Content wrapper: NEVER scroll, NEVER clip */
+#viewer-content {
+    overflow: visible;
+    height: auto;
+    max-height: none;
+    padding: 0;
+    margin: 0;
     text-align: center;
+}
+
+/* Image behavior */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: calc(100vh - 10rem);  /* fit when NOT expanded */
+    height: auto;
+    cursor: zoom-in;
+}
+
+img.expanded {
+    max-width: 90vw;
+    max-height: none;          /* full height */
+    cursor: zoom-out;
 }
 
 button {
@@ -58,4 +69,17 @@ button {
 
 a {
     text-decoration: none;
+}
+
+#viewer-content {
+    overflow: visible;     /* NEVER scroll */
+    max-height: none;
+    height: auto;
+}
+
+#description {
+    margin-left: 10rem;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    max-width: 70%;
 }
