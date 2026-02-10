@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Image Viewer</title>
+<title>Image Viewer for Maps</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="gallery.css">
 </head>
 
 
 <body>
-
+  
 <h1>Maps</h1>
+<h4>Set of maps, starting with one of the overall cruise, followed by more detailed maps of the cruise segments</h4>
 
 <div class="gallery">
 
@@ -18,66 +19,132 @@
     <a href="viewer/index.html"
        class="viewer-link"
        data-index="0">
-        <img src="images/Maps/010_2025-12-20_VikingOctantis-itinerary.png"
+        <img src="images/Maps/005_1200px-Easter_Island_map-en-min.jpg"
              class="thumb"
+             loading="lazy"
              alt="Alternative text">
     </a>
-    <figcaption>---</figcaption>
+    <figcaption>Easter Island</figcaption>
 </figure>
 
 <figure>
     <a href="viewer/index.html"
        class="viewer-link"
        data-index="1">
-        <img src="images/Maps/020_9f09a8b09a3e40d9806ef2002f0f78a7_Voyage_Maps_20th_December_2025__6th_January_2026.png"
+        <img src="images/Maps/010_2025-12-20_VikingOctantis-itinerary.png"
              class="thumb"
+             loading="lazy"
              alt="Alternative text">
     </a>
-    <figcaption>---</figcaption>
+    <figcaption>Cruise overview</figcaption>
 </figure>
 
 <figure>
     <a href="viewer/index.html"
        class="viewer-link"
        data-index="2">
-        <img src="images/Maps/030_07329753ec6c4c4484785cd944e68978_Voyage_Maps_20th_December_2025__6th_January_2026.png"
+        <img src="images/Maps/020_9f09a8b09a3e40d9806ef2002f0f78a7_Voyage_Maps_20th_December_2025__6th_January_2026.png"
              class="thumb"
+             loading="lazy"
              alt="Alternative text">
     </a>
-    <figcaption>---</figcaption>
+    <figcaption>to the Falklands</figcaption>
 </figure>
 
 <figure>
     <a href="viewer/index.html"
        class="viewer-link"
        data-index="3">
-        <img src="images/Maps/040_110ef0976a084c969f3e35dbeb8e0137_Voyage_Maps_20th_December_2025__6th_January_2026.png"
+        <img src="images/Maps/030_07329753ec6c4c4484785cd944e68978_Voyage_Maps_20th_December_2025__6th_January_2026.png"
              class="thumb"
+             loading="lazy"
              alt="Alternative text">
     </a>
-    <figcaption>---</figcaption>
+    <figcaption>to South Georgia</figcaption>
 </figure>
 
 <figure>
     <a href="viewer/index.html"
        class="viewer-link"
        data-index="4">
-        <img src="images/Maps/050_fa27b913e37a42cca68def188a92cf54_Voyage_Maps_20th_December_2025__6th_January_2026.png"
+        <img src="images/Maps/035_c3c32780a431410fa593a321739d940d_Voyage_Maps_20th_December_2025__6th_January_2026.png"
              class="thumb"
+             loading="lazy"
              alt="Alternative text">
     </a>
-    <figcaption>---</figcaption>
+    <figcaption>South Georgia Island</figcaption>
 </figure>
 
 <figure>
     <a href="viewer/index.html"
        class="viewer-link"
        data-index="5">
-        <img src="images/Maps/060_b0286a09f26e4790a56545e9e3e62a3d_Voyage_Maps_20th_December_2025__6th_January_2026.png"
+        <img src="images/Maps/040_110ef0976a084c969f3e35dbeb8e0137_Voyage_Maps_20th_December_2025__6th_January_2026.png"
              class="thumb"
+             loading="lazy"
              alt="Alternative text">
     </a>
-    <figcaption>---</figcaption>
+    <figcaption>to Antarctica</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="6">
+        <img src="images/Maps/043_Elephant_Island_map-en.svg.png"
+             class="thumb"
+             loading="lazy"
+             alt="Alternative text">
+    </a>
+    <figcaption>Elephant Island</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="7">
+        <img src="images/Maps/047_GreenwichIsland_map.jpg"
+             class="thumb"
+             loading="lazy"
+             alt="Alternative text">
+    </a>
+    <figcaption>Greenwich Island</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="8">
+        <img src="images/Maps/050_fa27b913e37a42cca68def188a92cf54_Voyage_Maps_20th_December_2025__6th_January_2026.png"
+             class="thumb"
+             loading="lazy"
+             alt="Alternative text">
+    </a>
+    <figcaption>Antarctic regions</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="9">
+        <img src="images/Maps/060_b0286a09f26e4790a56545e9e3e62a3d_Voyage_Maps_20th_December_2025__6th_January_2026.png"
+             class="thumb"
+             loading="lazy"
+             alt="Alternative text">
+    </a>
+    <figcaption>Antarctic itinerary</figcaption>
+</figure>
+
+<figure>
+    <a href="viewer/index.html"
+       class="viewer-link"
+       data-index="10">
+        <img src="images/Maps/Livingston-Island-Map-2010.jpg"
+             class="thumb"
+             loading="lazy"
+             alt="Alternative text">
+    </a>
+    <figcaption></figcaption>
 </figure>
 
 </div>
@@ -91,33 +158,69 @@ IMPORTANT:
 
 const galleryItems = [
     {
+        src: "../images/Maps/005_1200px-Easter_Island_map-en-min.jpg",
+        caption: "Pre-extension to Easter Island",
+        description: "ABC"
+    },
+
+    {
         src: "../images/Maps/010_2025-12-20_VikingOctantis-itinerary.png",
-        caption: "Viking Octantis cruise, 2025/12/20 - 2026/01/06"
+        caption: "Viking Octantis cruise, 2025/12/20 - 2026/01/06",
+        description: ""
     },
 
     {
         src: "../images/Maps/020_9f09a8b09a3e40d9806ef2002f0f78a7_Voyage_Maps_20th_December_2025__6th_January_2026.png",
-        caption: "Ushuaia to Falklands, 2025/12/20 - 2025/12/23"
+        caption: "Ushuaia to Falklands, 2025/12/20 - 2025/12/23",
+        description: "After a two-day cruise to the Falkland Islands, high winds kept us from being able to do our scheduled first stop at West Point Island, but we had good weather the next day at Port Stanley"
     },
 
     {
         src: "../images/Maps/030_07329753ec6c4c4484785cd944e68978_Voyage_Maps_20th_December_2025__6th_January_2026.png",
-        caption: ""
+        caption: "Cruise to South Georgia Island via Iceberg A23a",
+        description: "The highlight of the two-day cruise to South Georgia Island was getting a good view of iceberg A23a, which had been twice as large as Rhode Island when it broke off from the ice shelf in 1986, and was still huge when we passed by"
+    },
+
+    {
+        src: "../images/Maps/035_c3c32780a431410fa593a321739d940d_Voyage_Maps_20th_December_2025__6th_January_2026.png",
+        caption: "",
+        description: ""
     },
 
     {
         src: "../images/Maps/040_110ef0976a084c969f3e35dbeb8e0137_Voyage_Maps_20th_December_2025__6th_January_2026.png",
-        caption: ""
+        caption: "Cruise from South Georgia to Antarctica",
+        description: "We cruised by Elephant Island, and saw the area where Shackleton's crew survived for four months, but ice in the bay kept us from being able to get close enough to see the monument. We proceeded on to Yankee Harbor on Greenwich Island in the South Shetlands."
+    },
+
+    {
+        src: "../images/Maps/043_Elephant_Island_map-en.svg.png",
+        caption: "Elephant Island",
+        description: "Point Wild is where Ernest Shackleton's crew spent four months waiting to be rescued. We saw the area, but ice in the bay kept us from getting close enough to see the monument."
+    },
+
+    {
+        src: "../images/Maps/047_GreenwichIsland_map.jpg",
+        caption: "Yankee Harbor in Greenwich Island",
+        description: "Yankee Harbor is on the south side of the island. The inset at the bottom of the map shows Elephant Island relative to the rest of the South Shetland Islands. Click on the map to enlarge it and allow vertical scrolling. Click again to return to the original format."
     },
 
     {
         src: "../images/Maps/050_fa27b913e37a42cca68def188a92cf54_Voyage_Maps_20th_December_2025__6th_January_2026.png",
-        caption: ""
+        caption: "",
+        description: ""
     },
 
     {
         src: "../images/Maps/060_b0286a09f26e4790a56545e9e3e62a3d_Voyage_Maps_20th_December_2025__6th_January_2026.png",
-        caption: ""
+        caption: " ",
+        description: "None of the originally described shore excursions happened, but the captain and crew were able to find safe places for us to explore each day"
+    },
+
+    {
+        src: "../images/Maps/Livingston-Island-Map-2010.jpg",
+        caption: "",
+        description: ""
     },
 
 ];
