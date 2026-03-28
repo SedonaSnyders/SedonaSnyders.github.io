@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Viewer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="viewer.css">
+
+
+</head>
+
+<body>
+
+<header id="caption"></header>
+
+<main>
+    <div id="viewer-content">
+        <div id="description"></div>
+        <img id="image" src="" alt="">
+    </div>
+</main>
+
+<footer>
+    <button id="prev">◀ Previous</button>
+    <button id="next">Next ▶</button>
+    &nbsp;|&nbsp;
+    <a href="javascript:window.close()">Close</a>
+</footer>
+
+<script>
+let raw = window.location.hash.substring(1);
+let decoded = decodeURIComponent(raw);
+
+let data;
+
+if (decoded.startsWith("{")) {
+
+    // thumbnail click (JSON payload)
+    data = JSON.parse(decoded);
+
+} else {
+
+    // direct link like #023
+    const index = parseInt(decoded) || 0;
+
+    data = {
+        index: index,
+        items: galleryItems
+    };
+
+}
+
+function getScrollContainer() {
+    if (main.scrollHeight > main.clientHeight) return main;
+
+    const vc = document.getElementById("viewer-content");
+    if (vc && vc.scrollHeight > vc.clientHeight) return vc;
+
+    return document.scrollingElement;
+}
+
+let index = data.index;
+const items = data.items;
+
+const hashIndex = parseInt(window.location.hash.substring(1));
+
+if (!isNaN(hashIndex)) {
+    index = hashIndex;
+}
+
+const img = document.getElementById("image");
+const cap = document.getElementById("caption");
+const desc = document.getElementById("description");
+const main = document.querySelector("main");   // NEW
+
+function render() {
+    img.classList.remove("expanded");
+
+    img.src = items[index].src;
+    img.alt = items[index].caption;
+
+    cap.textContent  = items[index].caption;
+    desc.innerHTML = items[index].description;
+    window.location.hash = index;
+    img.onload = fitImage;
+    preloadAdjacent();}
+    
+function preloadAdjacent() {
+
+    const next = (index + 1) % items.length;
+    const prev = (index - 1 + items.length) % items.length;
+
+    new Image().src = items[next].src;
+    new Image().src = items[prev].src;
+
+}
+
+function fitImage() {
+
+    if (img.classList.contains("expanded")) {
+        img.style.maxHeight = "none";
+        return;
+    }
+
+    const header = document.querySelector("header").offsetHeight;
+    const desc   = document.getElementById("description").offsetHeight;
+    const footer = document.querySelector("footer").offsetHeight;
+
+    const available = window.innerHeight - header - desc - footer - 20;
+
+    img.style.maxHeight = available + "px";
+}
+
+img.addEventListener("click", () => {
+
+    const expanding = !img.classList.contains("expanded");
+
+    img.classList.toggle("expanded");
+
+    if (expanding) {
+        const scroller = getScrollContainer();
+        scroller.scrollTop = img.offsetTop;
+    }
+
+    fitImage();
+
+});
+
+window.addEventListener("resize", fitImage);
+
+document.getElementById("next").onclick = () => {
+    index = (index + 1) % items.length;
+    render();
+};
+
+document.getElementById("prev").onclick = () => {
+    index = (index - 1 + items.length) % items.length;
+    render();
+};
+
+document.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight") document.getElementById("next").click();
+    if (e.key === "ArrowLeft") document.getElementById("prev").click();
+    if (e.key === "Escape") window.close();
+});
+
+render();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Image Viewer for EasterIsland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    </head>
+    
+    
+    <body>
+      
+    <header id="page-header">Easter Island</header>
+    <div class="gallery">
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="0">
+            <img src="images_2025-26_Antarctica/EasterIsland/010_RanoKau20251216_173827 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption>Rano Kau</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="1">
+            <img src="images_2025-26_Antarctica/EasterIsland/020_RapaNui-flag_20251216_175308 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption>Rapa Nui flag</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="2">
+            <img src="images_2025-26_Antarctica/EasterIsland/030_Islands_P1050513 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption>Moto Nui and Moto Iti</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="3">
+            <img src="images_2025-26_Antarctica/EasterIsland/040_CraterLake_P1050500 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption>Crater Lake</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="4">
+            <img src="images_2025-26_Antarctica/EasterIsland/050_FishPetroglyph_P1050502 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption>Fish Petroglyph</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="5">
+            <img src="images_2025-26_Antarctica/EasterIsland/060_P1050527 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption>Wooden recreation</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="6">
+            <img src="images_2025-26_Antarctica/EasterIsland/100_P1050529 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption>Rano Raraku quarry</figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="7">
+            <img src="images_2025-26_Antarctica/EasterIsland/110_20251217_104508 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="8">
+            <img src="images_2025-26_Antarctica/EasterIsland/120_P1050540 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="9">
+            <img src="images_2025-26_Antarctica/EasterIsland/130_20251217_103450 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="10">
+            <img src="images_2025-26_Antarctica/EasterIsland/140_20251217_101413 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="11">
+            <img src="images_2025-26_Antarctica/EasterIsland/150_P1050552 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    </div>
+    
+    <p><a href="Maps.html" class="back-link">← Back to maps</a></p>
+    
+    <script>
+    /*
+    IMPORTANT:
+    - Thumbnail paths are relative to THIS file
+    - Full image paths are relative to viewer/viewer.html
+    - The index numbers start with 0, so that the image shown by the viewer matches the thumbnail
+    */
+    
+    const galleryItems = [
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/010_RanoKau20251216_173827 copy.jpg",
+            caption: "Rano Kau",
+            description: "At Rano Kau we visited the ceremonial village of Orongo and had views of the crater lake and off-shore islands."
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/020_RapaNui-flag_20251216_175308 copy.jpg",
+            caption: "Rapa Nui flag",
+            description: " The center of the reimiro represents a canoe, which makes sense, but the things at the end are supposed to be faces, which I don't see."
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/030_Islands_P1050513 copy.jpg",
+            caption: "Moto Nui and Moto Iti",
+            description: " These smaller islands near Rapa Nui were important in the coming-of-age competition, which involved swimming to to Moto Nui (the larger island), then collecting and returning with a sooty tern egg."
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/040_CraterLake_P1050500 copy.jpg",
+            caption: "Crater Lake",
+            description: "The water at the bottom was a reliable source of fresh water, but not easily accessible"
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/050_FishPetroglyph_P1050502 copy.jpg",
+            caption: "Fish Petroglyph",
+            description: "The stylized fish is curled around a whatsit."
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/060_P1050527 copy.jpg",
+            caption: "Modern wooden recreation of a moai",
+            description: "Not authentic, but cute."
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/100_P1050529 copy.jpg",
+            caption: "Rano Raraku Volcano, site of the quarry",
+            description: "<p>Perhaps the most important stop of the visit. Site of the quarry where all of the moari came from. Plus all the individual moari in their original locations.</p><p>Several of us were unable to do the walk to see the quarry up close, or chose not to. We enjoyed having the time to take in the full scene. Those who did were glad, but said it was tough.</p>"
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/110_20251217_104508 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/120_P1050540 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/130_20251217_103450 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/140_20251217_101413 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/EasterIsland/150_P1050552 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+    ];
+    
+    document.querySelectorAll(".viewer-link").forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+    
+            const index = Number(link.dataset.index);
+    
+            const payload = encodeURIComponent(JSON.stringify({
+                index,
+                items: galleryItems
+            }));
+    
+            window.open(link.href + "#" + payload, "_blank");
+        });
+    });
+    
+    
+    window.addEventListener("load", () => {
+    
+        const hash = window.location.hash.substring(1);
+        const index = parseInt(hash);
+    
+        if (!isNaN(index)) {
+    
+            const payload = encodeURIComponent(JSON.stringify({
+                index: index,
+                items: galleryItems
+            }));
+    
+            window.open("viewer/viewer.html#" + payload, "_blank");
+    
+        }
+    
+    });
+    </script>
+    
+    </body>
+    </html>
+    
