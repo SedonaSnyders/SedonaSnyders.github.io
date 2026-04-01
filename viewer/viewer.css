@@ -100,7 +100,7 @@ a {
 
 #description {
     max-width: 55rem;          /* readable line length */
-    margin: 0 auto 0.75rem auto;  /* center horizontally */
+    margin: 0.5 auto 0.75rem auto;  /* center horizontally */
     padding: 0 1rem;           /* small side padding */
     text-align: left;
     line-height: 1.5;
