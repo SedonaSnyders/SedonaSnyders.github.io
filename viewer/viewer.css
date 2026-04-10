@@ -119,3 +119,10 @@ a {
 .map-link:hover {
     color: #003366;
 }
+
+.media {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: calc(100vh - 12rem);
+}

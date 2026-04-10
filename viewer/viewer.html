@@ -17,7 +17,9 @@
 <main>
     <div id="viewer-content">
         <div id="description"></div>
+
         <img id="image" src="" alt="">
+        <video id="video" controls style="display:none;"></video>
     </div>
 </main>
 
@@ -69,23 +71,42 @@ if (!isNaN(hashIndex)) {
     index = hashIndex;
 }
 
-const img = document.getElementById("image");
 const cap = document.getElementById("caption");
 const desc = document.getElementById("description");
 const main = document.querySelector("main");   // NEW
 
+const container = document.getElementById("media-container");
+
+const img = document.getElementById("image");
+const video = document.getElementById("video");
+
 function render() {
-    img.classList.remove("expanded");
+    const item = items[index];
 
-    img.src = items[index].src;
-    img.alt = items[index].caption;
+    // reset both
+    img.style.display = "none";
+    video.style.display = "none";
 
-    cap.textContent  = items[index].caption;
-    desc.innerHTML = items[index].description;
-    window.location.hash = index;
-    img.onload = fitImage;
-    preloadAdjacent();}
-    
+    if (item.src.toLowerCase().endsWith(".mp4")) {
+        video.src = item.src;
+        video.controls = true;
+        video.autoplay = true;
+        video.muted = true;      // REQUIRED for autoplay
+        video.controls = true;
+        video.style.display = "block";
+        fitImage();
+    } else {
+        img.src = item.src;
+        img.alt = item.caption || "";
+        img.classList.remove("expanded");   // reset zoom state
+        img.style.display = "block";
+        fitImage();
+    }
+
+    cap.textContent = item.caption || "";
+    desc.innerHTML = item.description || "";
+}
+
 function preloadAdjacent() {
 
     const next = (index + 1) % items.length;

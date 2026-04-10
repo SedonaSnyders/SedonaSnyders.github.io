@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Image Viewer for Antarctica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    </head>
+    
+    
+    <body>
+      
+    <header id="page-header"></header>
+    <div class="gallery">
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="0">
+            <img src="images_2025-26_Antarctica/Antarctica/010_2025-12-31_YankeeHarbor.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="1">
+            <img src="images_2025-26_Antarctica/Antarctica/010_2025-12-31_YankeeHarbor.psd"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="2">
+            <img src="images_2025-26_Antarctica/Antarctica/020_P1060286-289_4000.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="3">
+            <img src="images_2025-26_Antarctica/Antarctica/030_P1060293 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="4">
+            <img src="images_2025-26_Antarctica/Antarctica/040_P1060271 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="5">
+            <img src="images_2025-26_Antarctica/Antarctica/050_P1060273 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="6">
+            <img src="images_2025-26_Antarctica/Antarctica/060_P1060304-topaz-rawdenoise-sharpen-upscale-2x copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="7">
+            <img src="images_2025-26_Antarctica/Antarctica/070_P1060315 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure>
+        <a href="viewer/viewer.html"
+           class="viewer-link"
+           data-index="8">
+            <img src="images_2025-26_Antarctica/Antarctica/080_P1060317 copy.jpg"
+                 class="thumb"
+                 loading="lazy"
+                 alt="Alternative text">
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    
+    </div>
+    
+    <p><a href="Maps.html" class="back-link">← Back to maps</a></p>
+    
+    <script>
+    /*
+    IMPORTANT:
+    - Thumbnail paths are relative to THIS file
+    - Full image paths are relative to viewer/viewer.html
+    - The index numbers start with 0, so that the image shown by the viewer matches the thumbnail
+    */
+    
+    const galleryItems = [
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/010_2025-12-31_YankeeHarbor.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/010_2025-12-31_YankeeHarbor.psd",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/020_P1060286-289_4000.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/030_P1060293 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/040_P1060271 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/050_P1060273 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/060_P1060304-topaz-rawdenoise-sharpen-upscale-2x copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/070_P1060315 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+        {
+            src: "../images_2025-26_Antarctica/Antarctica/080_P1060317 copy.jpg",
+            caption: "",
+            description: ""
+        },
+    
+    ];
+    
+    document.querySelectorAll(".viewer-link").forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+    
+            const index = Number(link.dataset.index);
+    
+            const payload = encodeURIComponent(JSON.stringify({
+                index,
+                items: galleryItems
+            }));
+    
+            window.open(link.href + "#" + payload, "_blank");
+        });
+    });
+    
+    
+    window.addEventListener("load", () => {
+    
+        const hash = window.location.hash.substring(1);
+        const index = parseInt(hash);
+    
+        if (!isNaN(index)) {
+    
+            const payload = encodeURIComponent(JSON.stringify({
+                index: index,
+                items: galleryItems
+            }));
+    
+            window.open("viewer/viewer.html#" + payload, "_blank");
+    
+        }
+    
+    });
+    </script>
+    
+    </body>
+    </html>
+    
