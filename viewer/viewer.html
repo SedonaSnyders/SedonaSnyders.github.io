@@ -124,13 +124,14 @@ function fitImage() {
         return;
     }
 
-    const header = document.querySelector("header").offsetHeight;
-    const desc   = document.getElementById("description").offsetHeight;
-    const footer = document.querySelector("footer").offsetHeight;
+    const available = main.clientHeight;
 
-    const available = window.innerHeight - header - desc - footer - 20;
+    const desc = document.getElementById("description");
+    const descHeight = desc ? desc.offsetHeight : 0;
 
-    img.style.maxHeight = available + "px";
+    img.style.maxHeight = (available - descHeight - 20) + "px";
+
+    img.style.maxWidth = "100%";   // ← ADD THIS (important)
 }
 
 img.addEventListener("click", () => {
@@ -138,14 +139,16 @@ img.addEventListener("click", () => {
     const expanding = !img.classList.contains("expanded");
 
     img.classList.toggle("expanded");
+    main.classList.toggle("expanded");
 
     if (expanding) {
-        const scroller = getScrollContainer();
-        scroller.scrollTop = img.offsetTop;
+        const top = img.getBoundingClientRect().top - main.getBoundingClientRect().top;
+        main.scrollTop = top;
+    } else {
+        main.scrollTop = 0;
     }
 
     fitImage();
-
 });
 
 window.addEventListener("resize", fitImage);
@@ -171,6 +174,7 @@ img.onload = () => {
 };
 
 render();
+
 </script>
 
 
