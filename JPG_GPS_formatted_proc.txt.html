@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Image Viewer for JPG_GPS_formatted_proc.txt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    </head>
+    
+    
+    <body>
+      
+    <header id="page-header"></header>
+    <div class="gallery">
+    
+    </div>
+    
+    <p><a href="Maps.html" class="back-link">← Back to maps</a></p>
+    
+    <script>
+    /*
+    IMPORTANT:
+    - Thumbnail paths are relative to THIS file
+    - Full image paths are relative to viewer/viewer.html
+    - The index numbers start with 0, so that the image shown by the viewer matches the thumbnail
+    */
+    
+    const galleryItems = [
+    ];
+    
+    document.querySelectorAll(".viewer-link").forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+    
+            const index = Number(link.dataset.index);
+    
+            const payload = encodeURIComponent(JSON.stringify({
+                index,
+                items: galleryItems
+            }));
+    
+            window.open(link.href + "#" + payload, "_blank");
+        });
+    });
+    
+    
+    window.addEventListener("load", () => {
+    
+        const hash = window.location.hash.substring(1);
+        const index = parseInt(hash);
+    
+        if (!isNaN(index)) {
+    
+            const payload = encodeURIComponent(JSON.stringify({
+                index: index,
+                items: galleryItems
+            }));
+    
+            window.open("viewer/viewer.html#" + payload, "_blank");
+    
+        }
+    
+    });
+    </script>
+    
+    </body>
+    </html>
+    

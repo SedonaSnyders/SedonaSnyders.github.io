@@ -166,6 +166,10 @@ document.addEventListener("keydown", e => {
     if (e.key === "Escape") window.close();
 });
 
+img.onload = () => {
+    fitImage();
+};
+
 render();
 </script>
 
