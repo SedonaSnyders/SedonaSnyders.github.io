@@ -107,6 +107,36 @@ function render() {
     desc.innerHTML = item.description || "";
 }
 
+function render() {
+
+    const item = items[index];
+
+    // reset state
+    img.classList.remove("expanded");
+    main.classList.remove("expanded");
+
+    // reset scroll position
+    main.scrollTop = 0;
+
+    if (item.src.toLowerCase().endsWith(".mp4")) {
+        video.src = item.src;
+        video.style.display = "block";
+        img.style.display = "none";
+        video.controls = true;
+        video.autoplay = true;
+        video.muted = true;      // REQUIRED for autoplay
+    } else {
+        img.src = item.src;
+        img.style.display = "block";
+        video.style.display = "none";
+
+        img.onload = fitImage;
+    }
+
+    cap.textContent = item.caption || "";
+    desc.innerHTML = item.description || "";
+}
+
 function preloadAdjacent() {
 
     const next = (index + 1) % items.length;

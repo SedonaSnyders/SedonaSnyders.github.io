@@ -70,7 +70,7 @@ array set A23a  {text "Historic iceberg A23a"
 array unset SouthGeorgia
 
 array set SouthGeorgia {text "South Georgia Island"
-    010 {"Bundled up" "Bundled up in an SOB" "<p>Fully bundled up for the first time. We almost always needed help getting the black life jackets on.</p><p>Our first excursion in South Georgia was Scenic Sailing in a Special Operations Boat.</p>"}
+    010 {"Bundled up" "Bundled up in an SOB" "<p>Fully bundled up for the first time. We almost always needed help getting the black life jackets on.</p><p>Our first excursion in South Georgia was Scenic Sailing in a <b>S</b>pecial <b>O</b>perations <b>B</b>oat.</p>"}
 
 }
 
