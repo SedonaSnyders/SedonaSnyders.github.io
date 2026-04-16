@@ -55,10 +55,14 @@ img, video {
     object-fit: contain;
     margin: 0 auto;
 }
+img {
+    cursor: zoom-in;
+}
 
 img.expanded {
     max-width: 100%;
     max-height: none;
+    cursor: zoom-out;
 }
 
 button {
