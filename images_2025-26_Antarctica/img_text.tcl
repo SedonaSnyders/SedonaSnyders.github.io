@@ -15,13 +15,13 @@ array set Maps { text "Set of maps, starting with an overall summary, followed b
     020 {"to the Falklands" "Ushuaia to Falklands -- Days 6-8, Dec 20-22" "<p>After a two-day cruise to the Falkland Islands, high winds kept us from being able to do our scheduled first stop, but we had good weather the next day at Port Stanley.</p>"}
     025 {"Falkland Islands" "Falkland Islands -- Days 8-9,  December 22-23" {<p>High winds kept us from being able to make our first planned stop, at Westpoint Island. So we could not see the rockhopper penguins there.</p> <p>It had rained the night before our day at Port Stanley and was still chilly in the morning, so most of the Magellanic Penguins were still in their burrows during our first excursion, but the weather was good for us and it did warm up in the afternoon. Many of us took advantage of the chance to have two shore excursions. We saw Gentoo penguins, and King penguins carrying eggs in the pouch above their feet on our second one.</p><p><p>See the <a href=\"../Falklands.html\" class=\"map-link\">Falkland Islands photos</a>.</p></p>}}
     030 {"to South Georgia" "Cruise to South Georgia Island via Iceberg A23a -- Days 10-11, Dec 24-25" {<p>The highlight of the two-day cruise to South Georgia Island was getting a good view of iceberg A23a, which had been twice as large as Rhode Island when it broke off from the ice shelf in 1986, and was still huge when we passed by. It was great to see this giant as it was falling apart. We saw a lot of ice that day.</p><p><p>See the <a href=\"../A23a.html\" class=\"map-link\">A23a photos</a>.</p></p>}}
-    035 {"South Georgia Island" "South Georgia Island -- Days 12-14, Dec 26-28" {<p>We had light rain on our second stop, Fortuna Bay, but none at Grytviken or Larsen Harbor. We were told that many cruises have less luck.</p> <p>At Grytviken we saw the remains of a whaling station, the tombstone of John Shackleton, and a fair amount of wildlife.</p> <p>At Fortuna Bay huge numbers of Gentoos, many fur seals, and some elephant seals.</p> <p>At Larsen Harbor we had dramatic scenery plus some wildlife, including Weddell Seals.abc</p><p><p>See the <a href=\"../SouthGeorgia.html\" class=\"map-link\">South Georgia Island photos</a>.</p></p>}}
-    040 {"toward Antarctica" "Cruise from South Georgia to Antarctica -- Days 15-16, Dec 29-30" {<p>We cruised by Elephant Island, had some time there, and saw the area where Shackleton's crew survived for four months. We proceeded on to Yankee Harbor on Greenwich Island in the South Shetlands (considered part of geographic but not continental Antarctica).</p><p><p>See the <a href=\"../CruiseAndElephantIsland.html\" class=\"map-link\">photos of the cruise and Elephant Island</a>.</p></p>}}
+    035 {"South Georgia Island" "South Georgia Island -- Days 12-14, Dec 26-28" {<p>We had light rain on our second stop, Fortuna Bay, but none at Grytviken or Larsen Harbor. We were told that many cruises have less luck.</p> <p>At Grytviken we saw the remains of a whaling station, the tombstone of John Shackleton, and a fair amount of wildlife.</p> <p>At Fortuna Bay huge numbers of Gentoos, many fur seals, and some elephant seals.</p> <p>At Larsen Harbor we had dramatic scenery plus some wildlife, including Weddell Seals.</p><p><p>See the <a href=\"../SouthGeorgia.html\" class=\"map-link\">South Georgia Island photos</a>.</p></p>}}
+    040 {"toward Antarctica" "Cruise from South Georgia to Antarctica -- Days 15-16, Dec 29-30" {<p>We cruised by Elephant Island, had some time there, and saw the area where Shackleton's crew survived for four months. We proceeded on to Yankee Harbor on Greenwich Island in the South Shetlands (considered part of geographic but not continental Antarctica).}}
 
     043 {"Elephant Island" "Elephant Island, the northernmost of the South Shetland Islands* -- Day 16, Dec 30" "<p>Point Wild is where Ernest Shackleton's crew spent four months waiting to be rescued. It is named for Frank Wild, leader of the stranded crew.</p> <p>We saw the area, but ice in the bay kept us from getting close enough to see the monument erected there in the late 1980s.</p><p><small><small>*As opposed to Fair Isle, the southernmost of the north Shetland Islands</small></small></p>"}
-    047 {"Greenwich Island" "Yankee Harbor in Greenwich Island" "<p>Yankee Harbor is on the south side of the island. The inset at the bottom of the map shows Elephant Island relative to the rest of the South Shetland Islands. <br>Click on the map to enlarge it and allow vertical scrolling. Click again to return to the original format.</p>"} 
+    047 {"Greenwich Island" "Yankee Harbor in Greenwich Island" {<p>Yankee Harbor is on the south side of the island. The inset at the bottom of the map shows Elephant Island relative to the rest of the South Shetland Islands. <br>Click on the map to enlarge it and allow vertical scrolling. Click again to return to the original format.</p></p><p><p>See the <a href=\"../SouthShetlands.html\" class=\"map-link\">South Shetland Islands photos</a>.</p></p>}} 
     050 {"Antarctic regions" "Antarctic regions" "This map highlights three of the regions of Antarctica we visited, while the actual itinereary is shown in the next map."}
-    060 {"Antarctic itinerary" "Antarctic itinerary -- Days 17-20" "None of the originally described shore excursions happened in the locations originally scheduled, but the captain and crew were able to find safe  and interesting places for us to explore each day"}
+    060 {"Antarctic itinerary" "Antarctic itinerary -- Days 17-20" {<p>None of the originally described shore excursions happened in the locations originally scheduled, but the captain and crew were able to find safe  and interesting places for us to explore each day</p><p><p>See the <a href=\"../Antarctica.html\" class=\"map-link\">Antarctica photos</a>.</p></p><p><p>See the <a href=\"../Submarine.html\" class=\"map-link\">Submarine photos</a>.</p></p>}}
 }
 
 array unset EasterIsland
@@ -38,7 +38,7 @@ array set EasterIsland {text "Easter Island"
     110 {"Standing sentinel" "Standing sentinel" "Being able to get close to several of the standing sentinels, which for some reason were left in the quarry area, was a special treat."}
     120 {"Another standing sentinel" "Another standing sentinel" }
     130 {"More standing sentinels" "More standing sentinels" "They show different levels of being covered up by the elements."}
-    199 {"Easter Bunny Island, Rabbit Newie" "Easter Bunny Island, Rabbit Newie" "Someone else did this one, which I came across on Easter Week"  }
+    160 {"Easter Bunny Island, Rabbit Newie" "Easter Bunny Island, Rabbit Newie" "Someone else did this one, which I came across on Easter Week"  }
 }
 
 array unset Falklands
@@ -75,7 +75,74 @@ array unset SouthGeorgia
 
 array set SouthGeorgia {text "South Georgia Island"
     010 {"Bundled up" "Bundled up in an SOB" "<p>Fully bundled up for the first time. We almost always needed help getting the black life jackets on.</p><p>Our first excursion in South Georgia was Scenic Sailing in a <b>S</b>pecial <b>O</b>perations <b>B</b>oat.</p>"}
-
+    020 {"South Georgia Seascape" "South Georgia Seascape, Grytviken" "We saw some dramatic sights"}
+    030 {"South Georgia Seascape" "South Georgia Seascape, Grytviken" "No icebergs right here"}
+    050 {"Petrels" "Antarctic and Arctic Petrels, from the SOB" {The Arctic Petrel in front has a reddish tip to the beak. The two in back are Antarctic, with greenish beak tips. }}
+    080 {"Ernest Shackleton's tombstone" "Ernest Shackleton's tombstone" }
+    110 {"Brown Skua" "Brown Skua" }
+    230 {"King Penguins" "King Penguins as far as the eye can see"} 
+    320 {"Us with Svenja and Hannes" "Us with Svenja Wuensche and Hannes Hofer" "These folks recognized us from our trans_atlantic cruise on the Viking Neptune in 2023"}
+    420 {"Antarctic Shag" "Antarctic Shag" "The ony cormorant in the Antarctic"}
 }
+    
+array unset SouthShetlands
+
+array set SouthShetlands {text "South Shetland Islands, Elephant Island and Greenwich Island"
+	010 {"Weather balloon launch" "Weather balloon launch" "The balloon was launched at precisely 9:00 local time"}
+	020 {"Weather balloon away" "Weather balloon away" "Across the globe, balloons are launched simultaneously"}
+	030 {"Blue Petrel" "Blue Petrel" "We saw a lot of these, but hard to get a really good pic."}
+	040 {"Black-browed Albatross" "Black-browed Albatross" "A very apt name"}
+	060 {"Pintado Petrel" "Pintado Petrel" "Also known as Cape Petrel"}
+	070 {"Pintado Petrel" "Pintado Petrel" "During the cruise we frequently saw them in flight, but less often resting"}
+	090 {"Elephant Island" "Elephant Island" "An early view as we were approaching the island. It seems it is not know whether the name comes from its shape, or because elephant seals were seen there."}
+	100 {"Elephant Island" "Elephant Island" "A view that includes Point Wild, where Shackleton's crew spent four months. The arrow points to its location. It had been hoped that we could get close enough to see the monument there, but the sea ice prevented it. The point is named for Frank Wild, leader of the crew there."}
+	120 {"Elephant Island" "Elephant Island" "As we were cruising away"}
+	220 {"Whale" "Whale" "We saw a few Humpback Whales as we neared Greenwich Island. This time just a fluke."}
+	230 {"Whale" "Whale" "This time one finished its breakfast gulp right next to the ship"}
+	240 {"Whale" "Whale" "The two breathing holes identify this as a baleen whale--the toothed whales have just one."}
+	247 {"Whale" "Whale" "A sequence of four images af a humpback finishing its feeding lunge."}
+	253 {"Whale" "Whale" "A single image af a humpback finishing its feeding lunge."}
+	260 {"Gentoo Penguins" "Gentoo Penguins" "The largest group we ever saw in the water, near Greenwich Island"}
+	265 {"On Greenwich Island" "On Greenwich Island" "Here we are, in full gear. The black life jackets are heavy, and hard to get into."}
+	270 {"Heading toward the Gentoo colony" "Heading toward the Gentoo colony" "After a fall, Michelle is being helped on the long walk over uneven rocks to the colony"}
+	275 {"Gentoos" "Gentoos"}
+	280 {"Gentoo poses" "Gentoo poses" "Gentoo, Chinstrap, and Adélie penguins are grouped together as brush-tailed"}
+	290 {"Brown Skua" "Brown Skua" "The Brown Skua is a predatory bird, that loves to eat penguin eggs." }
+	300 {"Lichen" "Lichen" "Roy Rogers used to end each program with the statement ‘May the good Lord take a lichen to ya.’"}
+	310 {"Gentoo colony" "Gentoo colony" "Each Gentoo couple builds a low rock nest, and then raises its chicks there."}
+	320 {"Southern elephant seal" "Southern elephant seal" "In the top pose the seal is close to the water, and eyeing us rather lazily. Then it decided to move away."}
+	330 {"Gentoo Penguins" "Gentoo Penguins" "It is hard to comprehend how many Gentoo Penguins we saw on the trip"}
+}
+
+array unset Antarctica
+
+array set Antarctica {text "Antarctica"
+	020 {"Approaching Recess Cove" "Approaching Recess Cove" "Recess Cove was the only place we set foot on the continent. 'It is a 2.5-mile-wide, scenic cove located on the east side of Charlotte Bay along the west coast of Graham Land on the Antarctic Peninsula.'"}
+	030 {"Approaching Recess Cove" "Approaching Recess Cove"}
+	035 {"Recess Cove, where we landed" "Recess Cove, where we landed"}
+	040 {"Cobbles and snowpack" "Cobbles and snowpack" "The guides had made a stairway leading up to the flatter part of the snowpack."}
+	050 {"We made it!" "We made it!" "Not many pix from here, but in the PM I had my submarine ride"}
+	060 {"Up on the snowpack" "Up on the snowpack" }
+	080 {"Kelp Gulls" "Kelp Gulls" "I was taking a photo of the gull standing on the rock, and was photo-bombed by the other one coming in for a landing. The Kelp Gull is the only gull species in the Antarctic."}
+	220 {"Adélie penguin" "Adélie penguin" "As we approached the landing site in our Zodiac, there were two hanging out just a few yards from where we were to get out. They myst have heard me planning to get great close-up photos, because they took off to the right as I was starting to walk away from the Zodiac."}
+	230 {"Adélie penguins" "Adélie penguins" "The best photo I got of the pair."}
+	240 {"Gentoos" "Gentoos"}
+	250 {"Gentoo nest" "Gentoo nest" "Perhaps because of the location, the nests here were more substantial than those we had seen on more level terrain. The chicks here were smaller than those on South Georgia had been."}
+	260 {"Gentoo nest" "Gentoo nest"}
+	270 {"Gentoo nests" "Gentoo nests"}
+	280 {"Ice trails" "Ice trails" "The trails lead up to the colony."}
+	290 {"Wading Gentoos" "Wading Gentoos" "We saw jillions on land, and many swimming, but only a few wading."}
+	300 {"Control room" "Control room" "In the afternoon we had a tour of the control room."}
+	310 {"Control room" "Control room"}
+	520 {"Chinstrap penguin" "Chinstrap penguin"} 
+	530 {"Chinstrap and Adélie penguins" "Chinstrap and Adélie penguins" }
+	540 {"Snowy Sheathbill" "Snowy Sheathbill" "'The snowy sheathbill does not have webbed feet. It finds its food on land. It is an omnivore, a scavenger, and a kleptoparasite and will eat nearly anything. It steals regurgitated krill and fish from penguins when feeding their chicks and will eat their eggs and chicks if given the opportunity. Sheathbills also eat carrion, animal feces, and, where available, human waste. It has been known to eat tapeworms that have been living in a chinstrap penguin's intestine.'"}
+	550 {"Melchior Base" "Melchior Base" "An Argentine Antarctic base and scientific research station"}
+	560 {"Weddell seal" "Weddell seal" }
+	570 {"Weddell seal" "Weddell seal" }
+	590 {"Black-browed Albatross" "Black-browed Albatross" "The only albatross photo I have that really shows off the wingspread"}
+}
+
+
 
 
