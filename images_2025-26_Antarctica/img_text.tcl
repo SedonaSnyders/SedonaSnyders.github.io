@@ -19,7 +19,7 @@ array set Maps { text "Set of maps, starting with an overall summary, followed b
     040 {"toward Antarctica" "Cruise from South Georgia to Antarctica -- Days 15-16, Dec 29-30" {<p>We cruised by Elephant Island, had some time there, and saw the area where Shackleton's crew survived for four months. We proceeded on to Yankee Harbor on Greenwich Island in the South Shetlands (considered part of geographic but not continental Antarctica).}}
 
     043 {"Elephant Island" "Elephant Island, the northernmost of the South Shetland Islands* -- Day 16, Dec 30" "<p>Point Wild is where Ernest Shackleton's crew spent four months waiting to be rescued. It is named for Frank Wild, leader of the stranded crew.</p> <p>We saw the area, but ice in the bay kept us from getting close enough to see the monument erected there in the late 1980s.</p><p><small><small>*As opposed to Fair Isle, the southernmost of the north Shetland Islands</small></small></p>"}
-    047 {"Greenwich Island" "Yankee Harbor in Greenwich Island" {<p>Yankee Harbor is on the south side of the island. The inset at the bottom of the map shows Elephant Island relative to the rest of the South Shetland Islands. <br>Click on the map to enlarge it and allow vertical scrolling. Click again to return to the original format.</p></p><p><p>See the <a href=\"../SouthShetlands.html\" class=\"map-link\">South Shetland Islands photos</a>.</p></p>}} 
+    047 {"Greenwich Island" "Yankee Harbor in Greenwich Island -- Day 17, December31" {<p>Yankee Harbor is on the south side of the island. The inset at the bottom of the map shows Elephant Island relative to the rest of the South Shetland Islands. <br>Click on the map to enlarge it and allow vertical scrolling. Click again to return to the original format.</p></p><p><p>See the <a href=\"../SouthShetlands.html\" class=\"map-link\">South Shetland Islands photos</a>.</p></p>}} 
     050 {"Antarctic regions" "Antarctic regions" "This map highlights three of the regions of Antarctica we visited, while the actual itinereary is shown in the next map."}
     060 {"Antarctic itinerary" "Antarctic itinerary -- Days 17-20" {<p>None of the originally described shore excursions happened in the locations originally scheduled, but the captain and crew were able to find safe  and interesting places for us to explore each day</p><p><p>See the <a href=\"../Antarctica.html\" class=\"map-link\">Antarctica photos</a>.</p></p><p><p>See the <a href=\"../Submarine.html\" class=\"map-link\">Submarine photos</a>.</p></p>}}
 }
@@ -77,17 +77,49 @@ array set SouthGeorgia {text "South Georgia Island"
     010 {"Bundled up" "Bundled up in an SOB" "<p>Fully bundled up for the first time. We almost always needed help getting the black life jackets on.</p><p>Our first excursion in South Georgia was Scenic Sailing in a <b>S</b>pecial <b>O</b>perations <b>B</b>oat.</p>"}
     020 {"South Georgia Seascape" "South Georgia Seascape, Grytviken" "We saw some dramatic sights"}
     030 {"South Georgia Seascape" "South Georgia Seascape, Grytviken" "No icebergs right here"}
-    050 {"Petrels" "Antarctic and Arctic Petrels, from the SOB" {The Arctic Petrel in front has a reddish tip to the beak. The two in back are Antarctic, with greenish beak tips. }}
-    080 {"Ernest Shackleton's tombstone" "Ernest Shackleton's tombstone" }
-    110 {"Brown Skua" "Brown Skua" }
-    230 {"King Penguins" "King Penguins as far as the eye can see"} 
-    320 {"Us with Svenja and Hannes" "Us with Svenja Wuensche and Hannes Hofer" "These folks recognized us from our trans_atlantic cruise on the Viking Neptune in 2023"}
-    420 {"Antarctic Shag" "Antarctic Shag" "The ony cormorant in the Antarctic"}
+    037 {"South Georgia Seascape" "South Georgia Seascape, Grytviken"}
+	044 {"South Georgia Seascape" "South Georgia Seascape, Grytviken"}
+	050 {"Petrels" "Antarctic and Arctic Petrels, from the SOB" {The Arctic Petrel in front has a reddish tip to the beak. The two in back are Antarctic, with greenish beak tips. }}
+	060 {"Seals" "Southern Fur Seal, Elephant Seals" "and a big pile of the very heavy black life jackets"}
+	065 {"Fur Seal videos" "Fur Seal videos" }
+	070 {"Fur seal and abandoned ship" "Fur seal examining abandoned ship" "Those bastards killed my great-great -grandfather"}
+    080 {"Ernest Shackleton's tombstone" "Ernest Shackleton's tombstone" "The rear of the tombstone is inscribed with a quotation from Robert Browning, <br>'I hold…that a man should strive to the uttermost for his life’s set prize.'"} 
+    090 {"Whalers' Church" "Whalers' Church, a Norwegian Anglican Church"  "Consecrated in 1913, it is now a tourist museum"}
+    100 {"Molting King Penguins" "Molting King Penguins" "During their catastrophic molt, they can not go in the water to eat for weeks."}
+    105 {"Mother and pup" "Southern fur seal and pup"}
+    110 {"Brown Skua" "Brown Skua"}
+    210 {"Southern Fur Seal" "Southern Fur Seal at Fortuna Bay"}
+    220 {"Seal pups" "Southern fur seal pups" "Obviously no natural predators, or this many pups would not be left unguarded"}
+    230 {"King Penguins" "King Penguins as far as the eye can see" "The light rain was not a problem. This image needs to be zoomed in and explored"} 
+    240 {"Southern Fur Seal" "Southern Fur Seal" "They seem to love posing"}
+    250 {"Southern Elephant Seal" "Southern Elephant Seal" "We did not see any males."}
+    260 {"King Penguins" "King Penguins hoping for a ride on the Viking Octantis" }
+    270 {"Seals and penguins" "Southern fur seal, King Penguins, and lounging elephant seals"}
+    280 {"Seals and penguins" "Southern fur seal, King Penguins, and lounging elephant seals" "The most exciting thing I saw an elephant seal do, and it is largely hidden by the penguins"}
+    290 {"Elephant seal" "Elephant seal doing a poor job of shielding itself from the rain"}
+    300 {"Leucistic seal pup" "Leucistic southern fur seal pup" "Our favorite creature from the whole trip. Less than 1 in 1,000 pups are born like this. If it were an even rarer albino, it would have pink eyes and no dark in the ears and flippers."} 
+    320 {"Us with Hannes and Svenja" "Us with Hannes Hofer and Svenja Wuensche" "These folks recognized us from our trans_atlantic cruise on the Viking Neptune in 2023"}
+    330 {"Info from the cruise" "Help in identifying seals"}
+    410 {"Elephant seals" "Elephant seals in Larsen Harbor" }
+    420 {"Antarctic Shag" "Antarctic Shag" "The ony cormorant in the Antarctic (it seems that the terms shag and cormorant are used rather haphazardly)"}
+    430 {"Weddell seal" "Weddell seal" }
+    440 {"Weddell seal" "Weddell seal" }
+    450 {"Weddell seal" "Weddell seal" }
+    460 {"Drygalski Fjord" "Drygalski Fjord"}
+    470 {"Drygalski Fjord" "Drygalski Fjord" "The following image is a map showing where this photo was taken"}
+    475 {"Map for previous photo" "Map for previous photo"}
+    480 {"Glacier in Drygalski Fjord" "Glacier in Drygalski Fjord"}
+    490 {"Jenkens Glacier" "Jenkens Glacier"}
+    500 {"Waterfalls" "Glacier-fed waterfalls in Drygalski Fjord"}  
+    510 {"Jenkens Glacier" "Our best view of Jenkens Glacier" {Named after James Travis Jenkins (1876-1959), author of 'A History of the Whale Fisheries' (1921) and 'Bibliography of Whaling' (1948).}}
+    520 {"Incomplete overcast" "Incomplete overcast" "A very unusual round hole in the clouds that persisted for quite a while"}
+    710 {"Pilot whales" "Pilot whales" {Our tour of the bridge was interrupted by a visit of pilot whales. Quite a thrill!}}
+    750 {"Penguin humor" "Penguin humor" "This cartoon was shown during one of the on-board lectures."}
 }
     
 array unset SouthShetlands
 
-array set SouthShetlands {text "South Shetland Islands, Elephant Island and Greenwich Island"
+array set SouthShetlands {text "South Shetland Islands -- Elephant Island and Greenwich Island"
 	010 {"Weather balloon launch" "Weather balloon launch" "The balloon was launched at precisely 9:00 local time"}
 	020 {"Weather balloon away" "Weather balloon away" "Across the globe, balloons are launched simultaneously"}
 	030 {"Blue Petrel" "Blue Petrel" "We saw a lot of these, but hard to get a really good pic."}
@@ -127,19 +159,26 @@ array set Antarctica {text "Antarctica"
 	220 {"Adélie penguin" "Adélie penguin" "As we approached the landing site in our Zodiac, there were two hanging out just a few yards from where we were to get out. They myst have heard me planning to get great close-up photos, because they took off to the right as I was starting to walk away from the Zodiac."}
 	230 {"Adélie penguins" "Adélie penguins" "The best photo I got of the pair."}
 	240 {"Gentoos" "Gentoos"}
-	250 {"Gentoo nest" "Gentoo nest" "Perhaps because of the location, the nests here were more substantial than those we had seen on more level terrain. The chicks here were smaller than those on South Georgia had been."}
+	250 {"Gentoo nest" "Gentoo nest" "Perhaps because of the location, the nests here were more substantial than those we had seen on more level terrain. The chicks here were smaller than those on South Georgia had been--because of the colder climate, the hatching etc. are later in the year."}
 	260 {"Gentoo nest" "Gentoo nest"}
 	270 {"Gentoo nests" "Gentoo nests"}
 	280 {"Ice trails" "Ice trails" "The trails lead up to the colony."}
 	290 {"Wading Gentoos" "Wading Gentoos" "We saw jillions on land, and many swimming, but only a few wading."}
 	300 {"Control room" "Control room" "In the afternoon we had a tour of the control room."}
 	310 {"Control room" "Control room"}
+	320 {"Antarctic Peninsula" "Antarctic Peninsula near Cuverville Island"}
+	330 {"Glacier with cracks" "Glacier with cracks"}
+	340 {"Glaciers" "Low clouds over glaciers"}
+	350 {"Antarctic landscape" "Antarctic landscape south of Palmer Station" "<p>'Palmer Station is a United States research station in Antarctica located on Anvers island (aka Antwerp Island), the only U.S. station on the continent located north of the Antarctic Circle.'</p><p>We did not see Palmer Station, at least those of us on the port side.</p>"}
+	360 {"Antarctic landscape" "Antarctic landscape south of Palmer Station" {<p>At 65°02'30.2\"S,  63°53'15.9\"W  this is just about as far south as we got -- around 100 miles north of the Antarctic Circle.</p><p>Google estimated that less than one-thousandth of one percent of the Earth's population has been that far south.</p>}}
+	510 {"Omega Island" "Omega Island, one of the Melchior Islands" "A lot of ice out there, starting our last day in Antarctica."} 
 	520 {"Chinstrap penguin" "Chinstrap penguin"} 
 	530 {"Chinstrap and Adélie penguins" "Chinstrap and Adélie penguins" }
-	540 {"Snowy Sheathbill" "Snowy Sheathbill" "'The snowy sheathbill does not have webbed feet. It finds its food on land. It is an omnivore, a scavenger, and a kleptoparasite and will eat nearly anything. It steals regurgitated krill and fish from penguins when feeding their chicks and will eat their eggs and chicks if given the opportunity. Sheathbills also eat carrion, animal feces, and, where available, human waste. It has been known to eat tapeworms that have been living in a chinstrap penguin's intestine.'"}
+	540 {"Snowy Sheathbill" "Snowy Sheathbill" "'The snowy sheathbill does not have webbed feet. It finds its food on land. It is an omnivore, a scavenger, and a kleptoparasite and will eat nearly anything. It steals regurgitated krill and fish from penguins feeding their chicks, and will eat their eggs and chicks if given the opportunity. Sheathbills also eat carrion, animal feces, and, where available, human waste. It has been known to eat tapeworms that have been living in a chinstrap penguin's intestine.'"}
 	550 {"Melchior Base" "Melchior Base" "An Argentine Antarctic base and scientific research station"}
 	560 {"Weddell seal" "Weddell seal" }
 	570 {"Weddell seal" "Weddell seal" }
+	580 {"Iceberg" "Iceberg" "Some shapes are even harder to believe than others"}
 	590 {"Black-browed Albatross" "Black-browed Albatross" "The only albatross photo I have that really shows off the wingspread"}
 }
 

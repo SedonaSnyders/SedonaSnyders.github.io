@@ -33,6 +33,16 @@
 let raw = window.location.hash.substring(1);
 let decoded = decodeURIComponent(raw);
 
+const isLocal = window.location.protocol === "file:";
+
+function getVideoSrc(file) {
+    if (isLocal) {
+        return "../videos_local/" + file;   // your local folder
+    } else {
+        return "https://your-storage.example.com/videos/" + file;
+    }
+}
+
 let data;
 
 if (decoded.startsWith("{")) {
@@ -79,31 +89,12 @@ const container = document.getElementById("media-container");
 const img = document.getElementById("image");
 const video = document.getElementById("video");
 
-function render() {
-    const item = items[index];
-
-    // reset both
-    img.style.display = "none";
-    video.style.display = "none";
-
-    if (item.src.toLowerCase().endsWith(".mp4")) {
-        video.src = item.src;
-        video.controls = true;
-        video.autoplay = true;
-        video.muted = true;      // REQUIRED for autoplay
-        video.controls = true;
-        video.style.display = "block";
-        fitImage();
-    } else {
-        img.src = item.src;
-        img.alt = item.caption || "";
-        img.classList.remove("expanded");   // reset zoom state
-        img.style.display = "block";
-        fitImage();
+function resolveVideoSrc(src) {
+    if (window.location.protocol === "file:") {
+        return src;
     }
-
-    cap.textContent = item.caption || "";
-    desc.innerHTML = item.description || "";
+    const filename = src.split("/").pop();
+    return "https://your-storage.example.com/videos/" + filename;
 }
 
 function render() {
@@ -117,8 +108,9 @@ function render() {
     // reset scroll position
     main.scrollTop = 0;
 
-    if (item.src.toLowerCase().endsWith(".mp4")) {
-        video.src = item.src;
+	if (item.src.toLowerCase().endsWith(".mp4")) {
+		video.src = resolveVideoSrc(item.src);
+        console.log("Video source:", video.src);
         video.style.display = "block";
         img.style.display = "none";
         video.controls = true;
