@@ -116,14 +116,21 @@ function render() {
         video.controls = true;
         video.autoplay = true;
         video.muted = true;      // REQUIRED for autoplay
-    } else {
-        img.src = item.src;
-        img.style.display = "block";
-        video.style.display = "none";
+	} else {
+		img.style.display = "block";
+		video.style.display = "none";
 
-        img.onload = fitImage;
-    }
+		const nextImg = new Image();
+		nextImg.src = item.src;
 
+		nextImg.onload = () => {
+			setTimeout(() => {
+				img.src = nextImg.src;
+
+				requestAnimationFrame(fitImage);
+			}, 50);
+		};
+	}
     cap.textContent = item.caption || "";
     desc.innerHTML = item.description || "";
 }
