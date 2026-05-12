@@ -44,7 +44,7 @@ array set EasterIsland {text "Easter Island"
     160 {"Easter Bunny Island, Rabbit Newie" "Easter Bunny Island, Rabbit Newie" "Someone else did this one, which I came across on Easter Week"}
     210 {"Ahu Nau Nau" "Ahu Nau Nau" "Ahu Nau Nau is the most elaborate and best-preserved platform of the three that were built in Anakena. When the statues were knocked down during the clashes between the various clans of the island, they were left buried in the sand on the beach, which allowed them to be more protected from erosion than the others."}
     230 {"Ahu Akivi" "Ahu Akivi" "The only moai facing the ocean--to honor the discoverers of the island, rather than inland.<br><br>A particular feature of the seven identical moai statues is that they exactly face sunset during the Spring Equinox and have their backs to the sunrise during the Autumn Equinox. Such an astronomically precise feature is seen only at this location on the island."}
-    250 {"Ahu Vai Uri" "Ahu Vai Uri" {Location: Situated within the Tahai Ceremonial Complex, near the city cemetery of Hanga Roa, accessible via a short walk.<<br>Name Meaning: 'Vai Uri' translates to 'dark water' or 'green water' in the Rapa Nui language.<br>The Moai: The platform holds five moai of varying sizes and levels of degradation, showcasing an evolution in construction styles, with the oldest parts dating back to around the 12th century.<br>History & Restoration: It is part of one of the most important archaeological sites on the island, restored around 1970.Significance: It is a premier spot for watching the sunset, often described as one of the most beautiful views on the island, with the statues silhouetted against the ocean.<br>Surrounding Complex: It is located alongside two other major platforms: Ahu Ko Te Riku (featuring a solitary, restored moai with coral eyes and a topknot) and Ahu Tahai.}}
+    250 {"Ahu Vai Uri" "Ahu Vai Uri" {Location: Situated within the Tahai Ceremonial Complex, near the city cemetery of Hanga Roa, accessible via a short walk.<<br>Name Meaning: 'Vai Uri' translates to 'dark water' or 'green water' in the Rapa Nui language.<br>The Moai: The platform holds five moai of varying sizes and levels of degradation, showcasing an evolution in construction styles, with the oldest parts dating back to around the 12th century.<br>History & Restoration: It is part of one of the most important archaeological sites on the island, restored around 1970.<br>Significance: It is a premier spot for watching the sunset, often described as one of the most beautiful views on the island, with the statues silhouetted against the ocean.<br>Surrounding Complex: It is located alongside two other major platforms: Ahu Ko Te Riku (featuring a solitary, restored moai with coral eyes and a topknot) and Ahu Tahai.}}
     260 {"Ahu Ko Te Riku" "Ahu Ko Te Riku" "An approximation to what the moai originally looked like"}
 }
 
@@ -52,23 +52,26 @@ array unset Falklands
 
 array set Falklands {text "Falkland Islands"
     010 {"Turkey Vulture" "Turkey Vulture" "The vulture was waiting patiently when we came ashore. I think it was hoping someone would die"}
-    020 {"Gypsy Cove sign" "Gypsy Cove sign" "Our first excursion was to Gypsy Cove, location of a colony of Magellanic penguins"}
+    020 {"Gypsy Cove sign" "Gypsy Cove sign" "Our first excursion was to Gypsy Cove, a lovely site and location of a colony of Magellanic penguins"}
     030 {"Gypsy Cove" "Gypsy Cove" {<big>Paradise?</big>}}
-    050 {"Magellanic penguin" "Magellanic penguin" "One of only a few Magellanic penguins we saw poking out of their dens"}
+    050 {"Magellanic penguin" "Magellanic penguin" "One of only a few Magellanic penguins we saw poking out of their dens on a cool morning after a rainy night"}
     060 {"Magellanic penguin" "Magellanic penguin" "Returning from the sea"}
     070 {"Male Upland Goose" "Male Upland Goose" "Actually a sheldgoose (pied-goose). They act like geese, but are more closeley related to ducks. They reminded me of the Paradise Shelducks we saw in New Zealand, but there the male has a black neck and the female a white one"}
+    075 {"Three male Upland Geese" "Three male Upland Geese" }
     080 {"Female Upland Goose" "Female Upland Goose" "They mate for life"}
     090 {"Falkland Steamer Ducks" "Falkland Steamer Ducks" "Flightless ducks endemic to the Falkland Islands. They get their name from the way they flap their wings while swimming, in a motion reminiscent of an old paddle-wheel steamer."}
     200 {"King and Gentoo Penguins" "King and Gentoo Penguins" "Bluff Cove Lagoon, a private wildlife haven, is home to more than 1,000 breeding pairs of gentoo penguins and a growing colony of king penguins. We were told that this was the last season for the area to be open to the public."}
     205 {"Video"} 
-    210 {"King Penguins" "King Penguins" "<p>It appeared that all of the King penguins here were carrying eggs. Their mates must have been out to dinner.</p> <p>No way that I know of to determine the sexes here, since they share egg-carrying duties."}
+    210 {"King Penguins" "King Penguins" "<p>It appeared that all of the King penguins here were carrying eggs. Their mates must have been out to dinner.</p> <p>No way that I know of to determine the sexes here, since they share egg-carrying duties. We were told that the eggs would start hatching fairly soon."}
     220 {"King Penguin with Egg" "King Penguin with Egg" "The penguin's toes are visible sticking out under the egg"}
     230 {"Gentoo Penguin Colony" "Gentoo Penguin Colony" "<p>Since the Falkland Islands have the warmest climate of the places we visited, the Gentoo chicks were more developed than in other colonies we visited. We were required to stay outside the area marked by the flags, but the penguins had no such restrictions.</p>"}
+    235 {"Waddling Gentoos" "Waddling Gentoos" }
     240 {"Gentoo parent with chick" "Gentoo parent with chick" "I want to grow up just like you, so feed me!"}
     250 {"Gentoo parent with chicks" "Gentoo parent with chicks" "The only thing worse than having one always-hungry chick is having two. Or is it the only thing that's better?"}
+    255 {"Gentoos" "Gentoos" "The chick looks very healthy"}
     260 {"Two-banded Plover" "Two-banded Plover" "Breeds in Falklands and extreme southern South America. Continental ones winter farther north."}
     270 {"Ruddy-headed Goose" "Ruddy-headed Goose" "Native to extreme southern South America and the Falklands, but introduced foxes have greatly reduced numbers on the continent."}
-
+    290 {"Cool but not cold" "Cool but not cold" "It was a bit windy. We did not have to wear the lifejackets, since we did not use the Zodiacs."}
 }
 
 array unset A23a
@@ -76,17 +79,26 @@ array unset A23a
 array set A23a  {text "Historic iceberg A23a"
     000 {"Satellite photo" "Satellite photo" "<p>The photo I found on the internet happened to have been taken the day after we cruised by.</p><p>Cosmic coincidence.</p>"}
     010 {"Early morning iceberg" "Early morning iceberg" "We saw this huge iceberg off the port bow from our cabin, and only later found out that it had broken off from A23a, which we later went by"}
+    020 {"Sea ice" "Sea ice drifting away from iceberg A23a"}
+    025 {"Foggy" "Foggy" "Much of the time as we approached A23a it was foggy, but we also got good views."}
+    030 {"More A23a sea ice" "More A23a sea ice and icebergs"}
+    040 {"Ramparts" "The ramparts of A23a in the background, with stuff broken off in front"}
+    050 {"Ice" "Ice"}
+    055 {"Delicate small iceberg" "Delicate small iceberg" }
+    060 {"Ice monster" "An ice monster rising from the sea"}
+    070 {"Flat-top iceberg" "Flat-top iceberg" "I assume that the grooves are from having slid across the ground while part of a glacier, and now inverted."} 
 }
 
 array unset SouthGeorgia
 
 array set SouthGeorgia {text "South Georgia Island"
-    010 {"Bundled up" "Bundled up in an SOB" "<p>Fully bundled up for the first time. We almost always needed help getting the black life jackets on.</p><p>Our first excursion in South Georgia was Scenic Sailing in a <b>S</b>pecial <b>O</b>perations <b>B</b>oat.</p>"}
+    010 {"Bundled up" "Bundled up in an SOB" "<p>Fully bundled up for the first time. We almost always needed help getting the black life jackets on. What seemed right too often turned out to be  backwards.</p><p>Our first excursion in South Georgia was Scenic Sailing in a <b>S</b>pecial <b>O</b>perations <b>B</b>oat.</p>"}
+    015 {"Southern Fur Seals" "Southern Fur Seal Colony" "Differentiating between seals and sea lions is confusing enough, without the fact that fur seals are really sea lions."}
     020 {"South Georgia Seascape" "South Georgia Seascape, Grytviken" "We saw some dramatic sights"}
-    030 {"South Georgia Seascape" "South Georgia Seascape, Grytviken" "No icebergs right here"}
+    030 {"South Georgia Seascape" "South Georgia Seascape, Grytviken" "The variation of iceberg distribution was always fascinating."}
     037 {"South Georgia Seascape" "South Georgia Seascape, Grytviken"}
 	044 {"South Georgia Seascape" "South Georgia Seascape, Grytviken"}
-	050 {"Petrels" "Antarctic and Arctic Petrels, from the SOB" {The Arctic Petrel in front has a reddish tip to the beak. The two in back are Antarctic, with greenish beak tips. }}
+	050 {"Petrels" "Antarctic and Arctic Petrels, from the SOB" {<p>The Arctic Petrel in front has a reddish tip to the beak. The two in back are Antarctic, with greenish beak tips.</p><p>As one of our naturalist guides explained, it's like stop lights. Red is at the top/north, and green at the bottom/south.</p>}}
 	060 {"Seals" "Southern Fur Seal, Elephant Seals" "and a big pile of the very heavy black life jackets"}
 	065 {"Fur Seal videos" "Fur Seal videos" }
 	070 {"Fur seal and abandoned ship" "Fur seal examining abandoned ship" "Those bastards killed my great-great -grandfather"}
@@ -94,24 +106,25 @@ array set SouthGeorgia {text "South Georgia Island"
     090 {"Whalers' Church" "Whalers' Church, a Norwegian Anglican Church"  "Consecrated in 1913, it is now a tourist museum"}
     100 {"Molting King Penguins" "Molting King Penguins" "During their catastrophic molt, they can not go in the water to eat for weeks."}
     105 {"Mother and pup" "Southern fur seal and pup"}
-    110 {"Brown Skua" "Brown Skua"}
+    110 {"Brown Skua" "Brown Skua" "A predatory bird that loves to eat penguin eggs."}
     210 {"Southern Fur Seal" "Southern Fur Seal at Fortuna Bay"}
-    220 {"Seal pups" "Southern fur seal pups" "Obviously no natural predators, or this many pups would not be left unguarded"}
+    220 {"Seal pups" "Southern fur seal pups" {Obviously no natural predators (at least when they are this big), or this many pups would not be left unguarded}}
     230 {"King Penguins" "King Penguins as far as the eye can see" "The light rain was not a problem. This image needs to be zoomed in and explored"} 
     240 {"Southern Fur Seal" "Southern Fur Seal" "They seem to love posing"}
     250 {"Southern Elephant Seal" "Southern Elephant Seal" "We did not see any males."}
+    255 {"Yellow-billed Teal" "Yellow-billed Teal" }
     260 {"King Penguins" "King Penguins hoping for a ride on the Viking Octantis" }
     270 {"Seals and penguins" "Southern fur seal, King Penguins, and lounging elephant seals"}
     280 {"Seals and penguins" "Southern fur seal, King Penguins, and lounging elephant seals" "The most exciting thing I saw an elephant seal do, and it is largely hidden by the penguins"}
     290 {"Elephant seal" "Elephant seal doing a poor job of shielding itself from the rain"}
     300 {"Leucistic seal pup" "Leucistic southern fur seal pup" "Our favorite creature from the whole trip. Less than 1 in 1,000 pups are born like this. If it were an even rarer albino, it would have pink eyes and no dark in the ears and flippers."} 
-    320 {"Us with Hannes and Svenja" "Us with Hannes Hofer and Svenja Wuensche" "These folks recognized us from our trans_atlantic cruise on the Viking Neptune in 2023"}
+    320 {"Us with Hannes and Svenja" "Us with Hannes Hofer and Svenja Wuensche" "These folks recognized us from our trans_Atlantic cruise on the Viking Neptune in 2023"}
     330 {"Info from the cruise" "Help in identifying seals"}
     410 {"Elephant seals" "Elephant seals in Larsen Harbor" }
-    420 {"Antarctic Shag" "Antarctic Shag" "The ony cormorant in the Antarctic (it seems that the terms shag and cormorant are used rather haphazardly)"}
+    420 {"Antarctic Shag" "Antarctic Shag" {<p>The ony cormorant in the Antarctic (it seems that the terms shag and cormorant are used rather haphazardly)</p><p>The most defining characteristic is the warty yellow caruncle found on the forehead. Additionally, the blue 'eye', which is actually blue skin surrounding the eye, is a distinct trait that stands out.}}
     430 {"Weddell seal" "Weddell seal" }
     440 {"Weddell seal" "Weddell seal" }
-    450 {"Weddell seal" "Weddell seal" }
+    450 {"Weddell seal" "Weddell seal" "They love lying on ice."}
     460 {"Drygalski Fjord" "Drygalski Fjord"}
     470 {"Drygalski Fjord" "Drygalski Fjord" "The following image is a map showing where this photo was taken"}
     475 {"Map for previous photo" "Map for previous photo"}
