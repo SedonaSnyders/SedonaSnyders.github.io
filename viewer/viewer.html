@@ -157,8 +157,11 @@ function fitImage() {
     const desc = document.getElementById("description");
     const descHeight = desc ? desc.offsetHeight : 0;
 
-    img.style.maxHeight = (available - descHeight - 20) + "px";
+    const maxH = (available - descHeight - 10) + "px";
 
+    img.style.maxHeight = maxH;
+    video.style.maxHeight = maxH;
+    
     img.style.maxWidth = "100%";   // ← ADD THIS (important)
 }
 

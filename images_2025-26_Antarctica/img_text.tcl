@@ -21,7 +21,7 @@ array set Maps { text "Set of maps, starting with an overall summary, followed b
     043 {"Elephant Island" "Elephant Island, the northernmost of the South Shetland Islands* -- Day 16, Dec 30" "<p>Point Wild is where Ernest Shackleton's crew spent four months waiting to be rescued. It is named for Frank Wild, leader of the stranded crew.</p> <p>We saw the area, but ice in the bay kept us from getting close enough to see the monument erected there in the late 1980s.</p><p><small><small>*As opposed to Fair Isle, the southernmost of the north Shetland Islands</small></small></p>"}
     047 {"Greenwich Island" "Yankee Harbor in Greenwich Island -- Day 17, December31" {<p>Yankee Harbor is on the south side of the island. The inset at the bottom of the map shows Elephant Island relative to the rest of the South Shetland Islands. <br>Click on the map to enlarge it and allow vertical scrolling. Click again to return to the original format.</p></p><p><p>See the <a href=\"../SouthShetlands.html\" class=\"map-link\">South Shetland Islands photos</a>.</p></p>}} 
     050 {"Antarctic regions" "Antarctic regions" "This map highlights three of the regions of Antarctica we visited, while the actual itinereary is shown in the next map."}
-    060 {"Antarctic itinerary" "Antarctic itinerary -- Days 17-20" {<p>None of the originally described shore excursions happened in the locations originally scheduled, but the captain and crew were able to find safe  and interesting places for us to explore each day</p><p><p>See the <a href=\"../Antarctica.html\" class=\"map-link\">Antarctica photos</a>.</p></p><p><p>See the <a href=\"../Submarine.html\" class=\"map-link\">Submarine photos</a>.</p></p>}}
+    060 {"Antarctic itinerary" "Antarctic itinerary -- Days 17-20" {<p>None of the originally described shore excursions happened in the locations originally scheduled, but the captain and crew were able to find safe  and interesting places for us to explore each day</p><p>On January 1st we made our one landing on the continent at Recess Cove.</p><p>On January 2nd we went ashore on Cuverville Island.</p><p>On January 3d we had a Zodiac cruise near Melchior Base.</p><p><p>See the <a href=\"../Antarctica.html\" class=\"map-link\">Antarctica photos</a>.</p></p><p><p>See the <a href=\"../Submarine.html\" class=\"map-link\">Submarine photos</a>.</p></p>}}
 }
 
 array unset EasterIsland
@@ -31,6 +31,7 @@ array set EasterIsland {text "Easter Island"
     020 {"Rapa Nui flag" "Rapa Nui flag" " The center of the reimiro represents a canoe, which makes sense, but the things at the end are supposed to be faces, which I don't see."}
     030 {"Moto Nui and Moto Iti" "Moto Nui and Moto Iti" " These smaller islands near Rapa Nui were important in the coming-of-age competition, which involved swimming to to Moto Nui (the larger island), then collecting and returning with a sooty tern egg."}
     040 {"Crater Lake" "Crater Lake" "The water at the bottom was a reliable source of fresh water, but not easily accessible"}
+    045 {"Contemporary sculpture" "Contemporary sculpture inspired by Rapa Nui art and traditions"} 
     050 {"Fish Petroglyph" "Fish Petroglyph" "The stylized fish is curled around a whatsit."}
     060 {"Wooden recreation" "Modern wooden recreation of a moai" "Not authentic, but cute."}
     100 {"Rano Raraku quarry" "Rano Raraku Volcano, site of the quarry" "<p>Perhaps the most important stop of the visit. Site of the quarry where all of the moai came from. Plus all the individual moari that are in their original locations (the ones on platforms had been knocked down during civil unrest and were put back up).</p><p>Several of us were unable to do the walk to see the quarry up close, or chose not to. We enjoyed having the time to take in the full scene. Those who did were glad, but said it was tough.</p>"} 
@@ -41,11 +42,21 @@ array set EasterIsland {text "Easter Island"
     140 {"Tongariki" "Our first view of Tongariki"}
     145 {"Tongariki sign" "Tongariki sign" {The symbol for the 'ng' sound (voiced velar nasal) in the International Phonetic Alphabet (IPA) is [ŋ]. It is often called 'eng' or 'engma' }}
     150 {"Tongariki" "Tongariki" {Key Facts About Ahu Tongariki:<br>Structure: It consists of 15 moai, including the heaviest one ever moved on the island, weighing approximately 86 tons.<br>History: The moai were toppled during internal conflicts in the 19th century and later affected by a tsunami in 1960.<br>Restoration: The site was fully restored between 1992 and 1996 by a team of archaeologists and engineers, including support from Japan.<br>Location: Situated near Rano Raraku (the quarry where the statues were carved) and Poike volcano, offering a dramatic backdrop.<br>Significance: It is considered the most significant megalithic monument in Polynesia.}}
+    155 {"Tongariki" "Tongariki"}
+    157 {"Tongariki" "Tongariki" "Thor Heyerdahl believed that there is a similarity between the rock work in this wall and that at Cuzco, leading him to hypothesize a link with the Incas."}
     160 {"Easter Bunny Island, Rabbit Newie" "Easter Bunny Island, Rabbit Newie" "Someone else did this one, which I came across on Easter Week"}
+    170 {"Fancy topknots" "Fancy topknots"}
+    180 {"Kari Kari" "Kari Kari Ballet Cultural" "<p>The Kari Kari Cultural Ballet is a vibrant and authentic window into the world of ancient Easter Island traditions. Located in the heart of Hanga Roa, this creative group is considered the oldest and most professional ensemble in Chile dedicated to preserving Rapa Nui culture.</p><p>The name means 'excellence.'"}
+    187 {"Kari Kari" "Kari Kari ensemble"}
+	192 {"Kari Kari" "Kari Kari solos"} 
+	196 {"Kari Kari" "Kari Kari videos"} 
     210 {"Ahu Nau Nau" "Ahu Nau Nau" "Ahu Nau Nau is the most elaborate and best-preserved platform of the three that were built in Anakena. When the statues were knocked down during the clashes between the various clans of the island, they were left buried in the sand on the beach, which allowed them to be more protected from erosion than the others."}
-    230 {"Ahu Akivi" "Ahu Akivi" "The only moai facing the ocean--to honor the discoverers of the island, rather than inland.<br><br>A particular feature of the seven identical moai statues is that they exactly face sunset during the Spring Equinox and have their backs to the sunrise during the Autumn Equinox. Such an astronomically precise feature is seen only at this location on the island."}
+    230 {"Ahu Akivi" "Ahu Akivi" "The only moai facing the ocean, rather than inland--to honor the discoverers of the island.<br><br>A particular feature of the seven identical moai statues is that they exactly face sunset during the Spring Equinox and have their backs to the sunrise during the Autumn Equinox. Such an astronomically precise feature is seen only at this location on the island."}
     250 {"Ahu Vai Uri" "Ahu Vai Uri" {Location: Situated within the Tahai Ceremonial Complex, near the city cemetery of Hanga Roa, accessible via a short walk.<<br>Name Meaning: 'Vai Uri' translates to 'dark water' or 'green water' in the Rapa Nui language.<br>The Moai: The platform holds five moai of varying sizes and levels of degradation, showcasing an evolution in construction styles, with the oldest parts dating back to around the 12th century.<br>History & Restoration: It is part of one of the most important archaeological sites on the island, restored around 1970.<br>Significance: It is a premier spot for watching the sunset, often described as one of the most beautiful views on the island, with the statues silhouetted against the ocean.<br>Surrounding Complex: It is located alongside two other major platforms: Ahu Ko Te Riku (featuring a solitary, restored moai with coral eyes and a topknot) and Ahu Tahai.}}
     260 {"Ahu Ko Te Riku" "Ahu Ko Te Riku" "An approximation to what the moai originally looked like"}
+    280 {"Neptune's Island" "Neptune's Island" "A fine restaurant that had taken us for dinner without reservations when our regularly scheduled place was closed. This is lunch  on our departure day."}
+    283 {"Neptune's Island" "Neptune's Island" }
+    287 {"Neptune's Island" "Neptune's Island" "Michelle's surprise lunch"}
 }
 
 array unset Falklands
@@ -133,7 +144,7 @@ array set SouthGeorgia {text "South Georgia Island"
     500 {"Waterfalls" "Glacier-fed waterfalls in Drygalski Fjord"}  
     510 {"Jenkens Glacier" "Our best view of Jenkens Glacier" {Named after James Travis Jenkins (1876-1959), author of 'A History of the Whale Fisheries' (1921) and 'Bibliography of Whaling' (1948).}}
     520 {"Incomplete overcast" "Incomplete overcast" "A very unusual round hole in the clouds that persisted for quite a while"}
-    710 {"Pilot whales" "Pilot whales" {Our tour of the bridge was interrupted by a visit of pilot whales. Quite a thrill!}}
+    710 {"Pilot whales video" "Pilot whales" {Our tour of the bridge was interrupted by a visit of pilot whales. Quite a thrill!}}
     750 {"Penguin humor" "Penguin humor" "This cartoon was shown during one of the on-board lectures."}
 }
     
@@ -171,12 +182,13 @@ array unset Antarctica
 array set Antarctica {text "Antarctica"
 	020 {"Approaching Recess Cove" "Approaching Recess Cove" "Recess Cove was the only place we set foot on the continent. 'It is a 2.5-mile-wide, scenic cove located on the east side of Charlotte Bay along the west coast of Graham Land on the Antarctic Peninsula.'"}
 	030 {"Approaching Recess Cove" "Approaching Recess Cove"}
-	035 {"Recess Cove, where we landed" "Recess Cove, where we landed"}
-	040 {"Cobbles and snowpack" "Cobbles and snowpack" "The guides had made a stairway leading up to the flatter part of the snowpack."}
+	035 {"Recess Cove, where we landed" "Recess Cove, where we landed on the peninsula"}
+	040 {"Cobbles and snowpack" "Cobbles and snowpack" "The guides had made a stairway leading up to the flatter part of the snowpack. Care was needed."}
 	050 {"We made it!" "We made it!" "Not many pix from here, but in the PM I had my submarine ride"}
 	060 {"Up on the snowpack" "Up on the snowpack" }
+	070 {"View from the snowpack" "View from the snowpack"}
 	080 {"Kelp Gulls" "Kelp Gulls" "I was taking a photo of the gull standing on the rock, and was photo-bombed by the other one coming in for a landing. The Kelp Gull is the only gull species in the Antarctic."}
-	220 {"Adélie penguin" "Adélie penguin" "As we approached the landing site in our Zodiac, there were two hanging out just a few yards from where we were to get out. They myst have heard me planning to get great close-up photos, because they took off to the right as I was starting to walk away from the Zodiac."}
+	220 {"Adélie penguin" "Adélie penguin" "As we approached the landing site in our Zodiac, there were two hanging out just a few yards from where we were to get out. They must have heard me planning to get great close-up photos, because they took off to the right as I was getting off the Zodiac."}
 	230 {"Adélie penguins" "Adélie penguins" "The best photo I got of the pair."}
 	240 {"Gentoos" "Gentoos"}
 	250 {"Gentoo nest" "Gentoo nest" "Perhaps because of the location, the nests here were more substantial than those we had seen on more level terrain. The chicks here were smaller than those on South Georgia had been--because of the colder climate, the hatching etc. are later in the year."}
