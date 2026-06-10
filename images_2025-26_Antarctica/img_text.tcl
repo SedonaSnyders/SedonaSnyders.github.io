@@ -75,7 +75,7 @@ array set Falklands {text "Falkland Islands"
     205 {"Video"} 
     210 {"King Penguins" "King Penguins" "<p>It appeared that all of the King penguins here were carrying eggs. Their mates must have been out to dinner.</p> <p>No way that I know of to determine the sexes here, since they share egg-carrying duties. We were told that the eggs would start hatching fairly soon."}
     220 {"King Penguin with Egg" "King Penguin with Egg" "The penguin's toes are visible sticking out under the egg"}
-    230 {"Gentoo Penguin Colony" "Gentoo Penguin Colony" "<p>Since the Falkland Islands have the warmest climate of the places we visited, the Gentoo chicks were more developed than in other colonies we visited. We were required to stay outside the area marked by the flags, but the penguins had no such restrictions.</p>"}
+    230 {"Gentoo Penguin Colony" "Gentoo Penguin Colony" "<p>Since the Falkland Islands have the warmest climate of the places we visited, the Gentoo chicks were more developed than in other colonies we visited. We were required to stay outside the area marked by the flags, but the penguins had no such restrictions. Once in a while one walked by.</p>"}
     235 {"Waddling Gentoos" "Waddling Gentoos" }
     240 {"Gentoo parent with chick" "Gentoo parent with chick" "I want to grow up just like you, so feed me!"}
     250 {"Gentoo parent with chicks" "Gentoo parent with chicks" "The only thing worse than having one always-hungry chick is having two. Or is it the only thing that's better?"}
@@ -161,6 +161,7 @@ array set SouthShetlands {text "South Shetland Islands -- Elephant Island and Gr
 	100 {"Elephant Island" "Elephant Island" "A view that includes Point Wild, where Shackleton's crew spent four months. The arrow points to its location. It had been hoped that we could get close enough to see the monument there, but the sea ice prevented it. The point is named for Frank Wild, leader of the crew there."}
 	120 {"Elephant Island" "Elephant Island" "As we were cruising away"}
 	220 {"Whale" "Whale" "We saw a few Humpback Whales as we neared Greenwich Island. This time just a fluke."}
+	225 {"Whale video" "Whale video" "I don't really like the video, but it does give an indication how many whales were in the area"}
 	230 {"Whale" "Whale" "This time one finished its breakfast gulp right next to the ship"}
 	240 {"Whale" "Whale" "The two breathing holes identify this as a baleen whale--the toothed whales have just one."}
 	247 {"Whale" "Whale" "A sequence of four images af a humpback finishing its feeding lunge."}
@@ -212,6 +213,24 @@ array set Antarctica {text "Antarctica"
 	570 {"Weddell seal" "Weddell seal" }
 	580 {"Iceberg" "Iceberg" "Some shapes are even harder to believe than others"}
 	590 {"Black-browed Albatross" "Black-browed Albatross" "The only albatross photo I have that really shows off the wingspread"}
+}
+
+array unset Submarine
+
+array set Submarine {text "Submarine" 
+	010 {"Submarine 1" "Submarine 1 (John),as seen during a ship's tour"}
+	015 {"Submarine 2" "Submarine 2 (Paul),as seen during a ship's tour"}
+	020 {"John, between dives" "John, between dives" {Our first good view of a sub in the water was on December 31, which turned out to be the day before my dive. This is #1, named John. The others in the fleet (two on our ship and two on its sister) are Paul, George, and something else I don't remember.}}
+	030 {"Getting ready to board" "Getting ready to board" "The metal rod on the left of the sub was extended before we started boarding,so we had something to hold onto all the way from Zodiac to the ladder going inside"}
+	040 {"Inside the sub" "Inside the sub" "Looking across to where the other three passengers are"}
+	050 {"Me inside the sub" "Me inside the sub, in the middle" "When the seating platform rotated to face the window, my view was partly obscured by the other two. On the dive we got down to about 400'"}
+	070 {"Antarctic sun starfish" "Antarctic sun starfish" "Also called the Death Star"}
+	080 {"Starfish" "Starfish" }
+	090 {"Antarctic sea floor" "Antarctic sea floor" }
+	100 {"Sea Cucumber" "Sea Cucumber" }
+	120 {"Saying goodbye" "Our captain, saying goodbye at the end of our dive"}
+	130 {"Waiting for the tow" "Waiting for the tow" "Ours was the last dive of the day, and the sub will be towed back to the ship"}
+	
 }
 
 
