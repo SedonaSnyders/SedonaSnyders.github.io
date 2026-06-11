@@ -133,15 +133,17 @@ array set SouthGeorgia {text "South Georgia Island"
     330 {"Info from the cruise" "Help in identifying seals"}
     410 {"Elephant seals" "Elephant seals in Larsen Harbor" }
     420 {"Antarctic Shag" "Antarctic Shag" {<p>The ony cormorant in the Antarctic (it seems that the terms shag and cormorant are used rather haphazardly)</p><p>The most defining characteristic is the warty yellow caruncle found on the forehead. Additionally, the blue 'eye', which is actually blue skin surrounding the eye, is a distinct trait that stands out.}}
-    430 {"Weddell seal" "Weddell seal" }
-    440 {"Weddell seal" "Weddell seal" }
-    450 {"Weddell seal" "Weddell seal" "They love lying on ice."}
+    425 {"Weddell seal" "Weddell seal" "Showing its spotted belly"}
+    430 {"Weddell seal" "Weddell seal" "Showing its solid-colored back" }
+    440 {"Weddell seal" "Weddell seal"  "Showing its spotted belly"}
+    450 {"Weddell seal" "Weddell seal" "Showing its solid-colored back and a bit of its spotted belly. They love lying on ice."}
     460 {"Drygalski Fjord" "Drygalski Fjord"}
     470 {"Drygalski Fjord" "Drygalski Fjord" "The following image is a map showing where this photo was taken"}
     475 {"Map for previous photo" "Map for previous photo"}
     480 {"Glacier in Drygalski Fjord" "Glacier in Drygalski Fjord"}
     490 {"Jenkens Glacier" "Jenkens Glacier"}
-    500 {"Waterfalls" "Glacier-fed waterfalls in Drygalski Fjord"}  
+    500 {"Waterfalls" "Glacier-fed waterfalls in Drygalski Fjord"}
+    505 {"Dirty glacier" "Dirty glacier" }  
     510 {"Jenkens Glacier" "Our best view of Jenkens Glacier" {Named after James Travis Jenkins (1876-1959), author of 'A History of the Whale Fisheries' (1921) and 'Bibliography of Whaling' (1948).}}
     520 {"Incomplete overcast" "Incomplete overcast" "A very unusual round hole in the clouds that persisted for quite a while"}
     710 {"Pilot whales video" "Pilot whales" {Our tour of the bridge was interrupted by a visit of pilot whales. Quite a thrill!}}
@@ -197,8 +199,11 @@ array set Antarctica {text "Antarctica"
 	270 {"Gentoo nests" "Gentoo nests"}
 	280 {"Ice trails" "Ice trails" "The trails lead up to the colony."}
 	290 {"Wading Gentoos" "Wading Gentoos" "We saw jillions on land, and many swimming, but only a few wading."}
-	300 {"Control room" "Control room" "In the afternoon we had a tour of the control room."}
+	295 {"Control room" "Control room" "In the afternoon we had a tour of the control room."}
+	300 {"Control room" "Control room"}
 	310 {"Control room" "Control room"}
+	312 {"Zodiac landing" "Typical Antarctic Zodiac landing" "The large cobbles made walking difficult, but the staff was always there to help"}
+	315 {"A bit of wine" "A bit of wine" "Enjoying wine before the outdoor Antarctic barbecue, after the shore excursion"}
 	320 {"Antarctic Peninsula" "Antarctic Peninsula near Cuverville Island"}
 	330 {"Glacier with cracks" "Glacier with cracks"}
 	340 {"Glaciers" "Low clouds over glaciers"}
