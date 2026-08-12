@@ -229,8 +229,7 @@ array set Submarine {text "Submarine"
 	030 {"Getting ready to board" "Getting ready to board" "The metal rod on the left of the sub was extended before we started boarding,so we had something to hold onto all the way from Zodiac to the ladder going inside"}
 	040 {"Inside the sub" "Inside the sub" "Looking across to where the other three passengers are"}
 	050 {"Me inside the sub" "Me inside the sub, in the middle" "When the seating platform rotated to face the window, my view was partly obscured by the other two. On the dive we got down to about 400'"}
-	070 {"Antarctic sun starfish" "Antarctic sun starfish" "Also called the Death Star"}
-	080 {"Starfish" "Starfish" }
+	070 {"Starfish" "Starfish" "The top two are Antarctic Sun Starfish, also called the Death Star. The others are more like the starfish we are used to."}
 	090 {"Antarctic sea floor" "Antarctic sea floor" }
 	100 {"Sea Cucumber" "Sea Cucumber" }
 	120 {"Saying goodbye" "Our captain, saying goodbye at the end of our dive"}
